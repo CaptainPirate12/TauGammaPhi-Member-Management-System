@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tau Gamma Phi | Member Management System</title>
 
-    <!-- Google Fonts -->
+    <title>Tau Gamma Phi Member Management System</title>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
+
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="background">
 
-<div class="login-container">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
 
-    <div class="logo-area">
+</div>
 
-        <img src="assets/images/logo.png" alt="Tau Gamma Phi Logo">
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left-side">
+
+        <img src="assets/images/logo.png" class="logo">
 
         <h1>TAU GAMMA PHI</h1>
 
-        <p>Member Management System</p>
+        <h2>Tambo Central Chapter</h2>
+
+        <p>
+            Member Management System
+        </p>
 
     </div>
 
-    <form class="login-card">
+    <!-- Login Card -->
 
-        <h2>Welcome Back</h2>
+    <div class="login-card">
 
-        <p>Login to continue</p>
+        <h3>Welcome Back</h3>
 
-        <div class="input-group">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" placeholder="Username">
-        </div>
+        <span>Sign in to continue</span>
 
-        <div class="input-group">
+        <form>
 
-            <i class="fa-solid fa-lock"></i>
+            <div class="input-box">
 
-            <input
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                type="text"
+                placeholder="Username">
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
                 type="password"
-                placeholder="Password"
-                id="password">
+                id="password"
+                placeholder="Password">
 
-            <button
+                <button
                 type="button"
-                class="show-password"
+                class="eye-btn"
                 onclick="togglePassword()">
 
                 <i class="fa-solid fa-eye"></i>
 
+                </button>
+
+            </div>
+
+            <button class="login-btn">
+
+                LOGIN
+
             </button>
+
+        </form>
+
+        <div class="divider">
+
+            OR
 
         </div>
 
-        <button class="login-btn">
-            Login
-        </button>
-
         <a href="register.html" class="register-btn">
-            Create Account
+
+            CREATE ACCOUNT
+
         </a>
 
-    </form>
+    </div>
 
 </div>
 

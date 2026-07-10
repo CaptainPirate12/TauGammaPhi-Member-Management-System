@@ -1,1 +1,202 @@
 /* Member styles */
+.dashboard{
+display:flex;
+min-height:100vh;
+background:#0B1120;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:260px;
+background:#111827;
+padding:30px 20px;
+}
+
+.logo{
+text-align:center;
+margin-bottom:40px;
+}
+
+.logo img{
+width:90px;
+margin-bottom:10px;
+}
+
+.logo h2{
+color:#FBBF24;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+padding:15px;
+margin-bottom:10px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+color:#CBD5E1;
+}
+
+.sidebar li:hover,
+.sidebar .active{
+background:#2563EB;
+color:white;
+}
+
+.sidebar i{
+width:25px;
+}
+
+/* Content */
+
+.content{
+flex:1;
+padding:40px;
+}
+
+.content h1{
+margin-bottom:30px;
+}
+
+/* Card */
+
+.profile-card{
+
+display:grid;
+
+grid-template-columns:300px 1fr;
+
+gap:30px;
+
+background:#1E293B;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.profile-left{
+
+text-align:center;
+
+}
+
+.profile-left img{
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+border:5px solid #FBBF24;
+
+object-fit:cover;
+
+margin-bottom:20px;
+
+}
+
+.profile-left h2{
+
+margin-bottom:10px;
+
+}
+
+.profile-left p{
+
+color:#CBD5E1;
+
+margin-bottom:20px;
+
+}
+
+.profile-left button{
+
+padding:12px 30px;
+
+background:#2563EB;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+.profile-left button:hover{
+
+background:#1D4ED8;
+
+}
+
+.profile-right{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.info{
+
+background:#111827;
+
+padding:20px;
+
+border-radius:15px;
+
+}
+
+.info label{
+
+display:block;
+
+color:#94A3B8;
+
+font-size:14px;
+
+margin-bottom:10px;
+
+}
+
+.info span{
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+@media(max-width:900px){
+
+.profile-card{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-right{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+display:none;
+
+}
+
+}

@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TauGammaPhi - Home</title>
+    <title>Tau Gamma Phi | Member Management System</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
+
 <body>
-    <h1>Welcome</h1>
-    <script src="assets/js/app.js"></script>
+
+<div class="background"></div>
+
+<div class="login-container">
+
+    <div class="logo-area">
+
+        <img src="assets/images/logo.png" alt="Tau Gamma Phi Logo">
+
+        <h1>TAU GAMMA PHI</h1>
+
+        <p>Member Management System</p>
+
+    </div>
+
+    <form class="login-card">
+
+        <h2>Welcome Back</h2>
+
+        <p>Login to continue</p>
+
+        <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+                type="password"
+                placeholder="Password"
+                id="password">
+
+            <button
+                type="button"
+                class="show-password"
+                onclick="togglePassword()">
+
+                <i class="fa-solid fa-eye"></i>
+
+            </button>
+
+        </div>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+        <a href="register.html" class="register-btn">
+            Create Account
+        </a>
+
+    </form>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+
 </body>
 </html>

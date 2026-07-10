@@ -1,15 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Settings</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/settings.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Tau Gamma Phi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/settings.css">
+
 </head>
+
 <body>
-    <h1>Settings</h1>
-    <script src="assets/js/app.js"></script>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="assets/images/logo.png" alt="Logo">
+
+<h2>TGP</h2>
+
+</div>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li onclick="location.href='member.html'">
+<i class="fa-solid fa-user"></i>
+Member Information
+</li>
+
+<li onclick="location.href='certificate.html'">
+<i class="fa-solid fa-certificate"></i>
+Certificate
+</li>
+
+<li class="active">
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
+
+<li onclick="location.href='index.html'">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<main class="content">
+
+<h1>Account Settings</h1>
+
+<div class="settings-grid">
+
+<div class="card">
+
+<h2><i class="fa-solid fa-image"></i> Profile Picture</h2>
+
+<img src="assets/images/default-profile.png" class="profile">
+
+<input type="file">
+
+<button>Upload New Photo</button>
+
+</div>
+
+<div class="card">
+
+<h2><i class="fa-solid fa-lock"></i> Change Password</h2>
+
+<input type="password" placeholder="Current Password">
+
+<input type="password" placeholder="New Password">
+
+<input type="password" placeholder="Confirm Password">
+
+<button>Update Password</button>
+
+</div>
+
+<div class="card">
+
+<h2><i class="fa-solid fa-envelope"></i> Contact Information</h2>
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone Number">
+
+<input type="text" placeholder="Address">
+
+<button>Save Changes</button>
+
+</div>
+
+<div class="card">
+
+<h2><i class="fa-solid fa-circle-info"></i> System Information</h2>
+
+<p><strong>System:</strong> Tau Gamma Phi Member Management System</p>
+
+<p><strong>Chapter:</strong> Tambo Central Chapter</p>
+
+<p><strong>Version:</strong> 1.0.0</p>
+
+<p><strong>Status:</strong> Active</p>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
 </body>
+
 </html>

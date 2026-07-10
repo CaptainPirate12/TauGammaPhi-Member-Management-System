@@ -1,1 +1,37 @@
-/* Main stylesheet */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0B1120;
+    color:white;
+    overflow:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    background:
+    radial-gradient(circle at top left,#2563eb55,transparent 35%),
+    radial-gradient(circle at bottom right,#fbbf2433,transparent 25%),
+    #0B1120;
+
+    z-index:-1;
+
+}/* Main stylesheet */

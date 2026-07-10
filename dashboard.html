@@ -1,16 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
+
+    <title>Dashboard | Tau Gamma Phi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+
 </head>
+
 <body>
-    <h1>Dashboard</h1>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/dashboard.js"></script>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="assets/images/logo.png" alt="Logo">
+
+            <h2>TGP</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li onclick="location.href='member.html'">
+                <i class="fa-solid fa-user"></i>
+                Member Information
+            </li>
+
+            <li onclick="location.href='certificate.html'">
+                <i class="fa-solid fa-certificate"></i>
+                Certificate
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+            <li onclick="location.href='index.html'">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="content">
+
+        <header>
+
+            <div>
+
+                <h1>Dashboard</h1>
+
+                <p>Welcome to Tambo Central Chapter</p>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="assets/images/default-profile.png">
+
+                <span>Member</span>
+
+            </div>
+
+        </header>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>250</h2>
+
+                <p>Total Members</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <h2>220</h2>
+
+                <p>Active Members</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+                <h2>200</h2>
+
+                <p>Certificates</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                <h2>8</h2>
+
+                <p>Pending Members</p>
+
+            </div>
+
+        </section>
+
+        <!-- Announcement -->
+
+        <section class="announcement">
+
+            <h2>Announcements</h2>
+
+            <div class="box">
+
+                Welcome to the Tau Gamma Phi Member Management System.
+
+                <br><br>
+
+                Tambo Central Chapter
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
 </body>
+
 </html>

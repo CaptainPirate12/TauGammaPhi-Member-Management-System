@@ -1,15 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Member Profile</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/member.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Member Information</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/member.css">
+
 </head>
+
 <body>
-    <h1>Member Profile</h1>
-    <script src="assets/js/app.js"></script>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="assets/images/logo.png">
+
+<h2>TGP</h2>
+
+</div>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li class="active">
+<i class="fa-solid fa-user"></i>
+Member Information
+</li>
+
+<li onclick="location.href='certificate.html'">
+<i class="fa-solid fa-certificate"></i>
+Certificate
+</li>
+
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
+
+<li onclick="location.href='index.html'">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Content -->
+
+<main class="content">
+
+<h1>Member Information</h1>
+
+<div class="profile-card">
+
+<div class="profile-left">
+
+<img src="assets/images/default-profile.png">
+
+<h2>Juan Dela Cruz</h2>
+
+<p>Active Member</p>
+
+<button>Edit Profile</button>
+
+</div>
+
+<div class="profile-right">
+
+<div class="info">
+
+<label>Member ID</label>
+
+<span>TCP-0001</span>
+
+</div>
+
+<div class="info">
+
+<label>Chapter</label>
+
+<span>Tambo Central Chapter</span>
+
+</div>
+
+<div class="info">
+
+<label>Position</label>
+
+<span>Member</span>
+
+</div>
+
+<div class="info">
+
+<label>Status</label>
+
+<span>Active</span>
+
+</div>
+
+<div class="info">
+
+<label>Birthday</label>
+
+<span>January 1, 2000</span>
+
+</div>
+
+<div class="info">
+
+<label>Contact Number</label>
+
+<span>09123456789</span>
+
+</div>
+
+<div class="info">
+
+<label>Email</label>
+
+<span>member@email.com</span>
+
+</div>
+
+<div class="info">
+
+<label>Address</label>
+
+<span>Parañaque City</span>
+
+</div>
+
+<div class="info">
+
+<label>Date Initiated</label>
+
+<span>March 12, 2024</span>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
 </body>
+
 </html>

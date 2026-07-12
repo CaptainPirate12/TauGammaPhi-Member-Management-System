@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Register | Tau Gamma Phi</title>
+    <title>Register New Member | Tau Gamma Phi</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
 
 </head>
 
@@ -21,63 +22,84 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <div class="background">
 
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
-<div class="circle circle3"></div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
 
 </div>
 
 <div class="register-container">
 
-<div class="register-card">
+    <div class="register-card">
 
-<h2>Create Member Account</h2>
+        <h2>Register New Member</h2>
 
-<p>Tambo Central Chapter</p>
+        <p>Complete the form below to create your member account.</p>
 
-<form>
+        <form action="#" method="POST" enctype="multipart/form-data">
 
-<div class="profile-upload">
+            <div class="profile-upload">
 
-<img src="assets/images/default-profile.png" id="preview">
+                <img src="assets/images/default-profile.png" id="preview">
 
-<input type="file">
+                <input type="file" name="profile_picture">
 
-</div>
+            </div>
 
-<input type="text" placeholder="Full Name">
+            <input type="text" name="chapter" placeholder="Chapter *" required>
 
-<input type="text" placeholder="Member ID">
+            <input type="text" name="first_name" placeholder="First Name *" required>
 
-<input type="text" value="Tambo Central Chapter">
+            <input type="text" name="middle_name" placeholder="Middle Name">
 
-<input type="text" placeholder="Contact Number">
+            <input type="text" name="last_name" placeholder="Last Name *" required>
 
-<input type="email" placeholder="Email">
+            <input type="text" name="suffix" placeholder="Suffix">
 
-<input type="text" placeholder="Username">
+            <input type="text" name="address" placeholder="Complete Address *" required>
 
-<input type="password" placeholder="Password">
+            <input type="text" name="contact_number" placeholder="Contact Number *" required>
 
-<input type="password" placeholder="Confirm Password">
+            <input type="email" name="email" placeholder="Email Address *" required>
 
-<button>
+            <input type="text" name="username" placeholder="Username *" required>
 
-Register
+            <input type="password" name="password" placeholder="Password *" required>
 
-</button>
+            <input type="password" name="confirm_password" placeholder="Confirm Password *" required>
 
-<a href="index.html">
+            <div class="terms">
 
-Already have an account?
+                <label>
 
-</a>
+                    <input type="checkbox" required>
 
-</form>
+                    I confirm that all information provided is accurate and complete.
 
-</div>
+                </label>
+
+            </div>
+
+            <button type="submit">
+
+                Register Member
+
+            </button>
+
+            <p class="login-link">
+
+                Already registered?
+
+                <a href="index.html">Back to Sign In</a>
+
+            </p>
+
+        </form>
+
+    </div>
 
 </div>
 
 </body>
+
 </html>
